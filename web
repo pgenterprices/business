@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P. G Fabrication and Enterprises</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Soft light gray */
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #003366; /* Sophisticated blue */
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #003366; /* Sophisticated blue */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        header .cta-button {
+            background-color: #e4a01e; /* Elegant gold color */
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        header .cta-button:hover {
+            background-color: #f5b800; /* Hover effect */
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 400px;
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            filter: brightness(60%); /* Slightly darker background for readability */
+        }
+        .hero h2 {
+            font-size: 40px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Light shadow for text contrast */
+        }
+        .hero .cta-button {
+            background-color: #e4a01e;
+            padding: 12px 30px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        /* Services Section */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px;
+            background-color: #ffffff; /* Clean white background */
+            text-align: center;
+        }
+        .services h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #333; /* Darker text for better readability */
+        }
+        .service-item {
+            background-color: #fefefe; /* Soft white background for items */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        .service-item:hover {
+            background-color: #fafafa; /* Slight hover effect for item */
+        }
+        .service-item img {
+            width: 100%; /* Full width within the container */
+            max-width: 300px; /* Maximum width to prevent oversized images */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 15px;
+            border-radius: 10px;
+            object-fit: contain; /* Ensure the image doesn't stretch */
+        }
+        .service-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333; /* Dark text for contrast */
+        }
+        .service-item .cta-button {
+            background-color: #e4a01e; /* Elegant gold color */
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Featured Projects Section */
+        .projects {
+            padding: 50px;
+            background-color: #f9f9f9; /* Light background for section */
+        }
+        .projects h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #333; /* Dark text for readability */
+        }
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .project-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .project-gallery img:hover {
+            transform: scale(1.05); /* Slight hover effect for images */
+        }
+
+        /* Information Box Section (Combined About Us & Contact Us) */
+        .info-box {
+            background-color: #003366; /* Dark blue background for contrast */
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 50px;
+        }
+        .info-box h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .info-box p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .info-box .cta-button {
+            background-color: #e4a01e; /* Elegant gold color */
+            color: white;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #002244; /* Darker blue footer */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#info">About Us</a> <!-- New About Us link -->
+    </nav>
+
+    <header>
+        <h1>P. G Fabrication and Enterprises</h1>
+        <p>Experts in Grills, Remote Gates, and Compound Gates</p>
+        <button class="cta-button" onclick="window.location.href='#projects'">Explore Our Projects</button>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Transform Your Space with Quality Fabrication</h2>
+        <button class="cta-button" onclick="window.location.href='#services'">Discover Our Services</button>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <!-- Updated Grills image with Imgur direct URL -->
+            <img src="https://assets.onecompiler.app/42zju9mxt/42zju958h/grill.jpg" alt="Grills">
+            <h3>Grills</h3>
+            <p>Elegant and durable grills for your space.</p>
+            <button class="cta-button">More</button>
+        </div>
+        <div class="service-item">
+            <!-- Embedded YouTube Video for Remote Gate -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/NTNfChuPQFE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Remote Gate</h3>
+            <p>Automated gate solutions for convenience and security.</p>
+            <button class="cta-button">More</button>
+        </div>
+        <div class="service-item">
+            <img src="https://assets.onecompiler.app/42zju9mxt/42zju958h/compound%20gate.jpg" alt="Compound Gate">
+            <h3>Compound Gate</h3>
+            <p>Stylish gates for industrial and commercial spaces.</p>
+            <button class="cta-button">More</button>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-gallery">
+            <img src="https://1drv.ms/i/c/1d74b4a8d2a84d4c/Eaz6F0F58ABHpuz1iASQd3IBHd16EncPwkEpRdOTfncWpA?e=BukrZk" alt="Grill Project">
+            <img src="gate-project.jpg" alt="Gate Project">
+            <img src="compound-gate-project.jpg" alt="Compound Gate Project">
+        </div>
+    </section>
+
+    <!-- Information Box Section (Combined About Us & Contact Us) -->
+    <section class="info-box" id="info">
+        <h2>About Us & Contact Information</h2>
+        <p>We specialize in providing high-quality fabrication services, including grills, remote gates, and compound gates. With years of experience and a commitment to excellence, we ensure each project meets the highest standards.</p>
+        <p>Contact us for more information or to request a quote:</p>
+        <p>Phone: +91-9326404374</p>
+        <p>Email: <a href="mailto:pgenterprices.automation@gmail.com" style="color: white;">pgenterprices.automation@gmail.com</a></p>
+        <button class="cta-button" onclick="window.location.href='mailto:pgenterprices.automation@gmail.com'">Contact Us</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 P. G Fabrication and Enterprises. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
